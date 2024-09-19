@@ -1,4 +1,9 @@
 // step-01 add an event handler to the add money button inside the form
+
+document.getElementById('cash-out').addEventListener('click',function(){
+    window.location.href='./cashout.html';
+})
+
 document.getElementById('btn-add-money').addEventListener('click',function(event){
     event.preventDefault();
 
