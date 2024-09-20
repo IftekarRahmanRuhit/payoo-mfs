@@ -27,7 +27,10 @@
                     <button id="cash-out" class="btn btn-lg">Cash Out</button>
                 </div>
                 <div class="divider"></div>
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+
+                <!-- Add Money section start  -->
+
+                <div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -46,11 +49,38 @@
                       </div>
                     </form>
                   </div>
+
+                <!-- Add Money section end  -->
+
+                <!-- Cash out section Start  -->
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="input-cash-out" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-pin" type="password" placeholder="Pin" class="input input-bordered" autocomplete="off" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- Cash out section end  -->
+
               </div>
             </div>
           </div>
     </main>
 
     <script src="./js/home.js"></script>
+    <script src="./js/addmoney.js"></script>
+    <script src="./js/utilities.js"></script>
 </body>
 </html>
