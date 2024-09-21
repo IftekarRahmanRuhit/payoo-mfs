@@ -17,20 +17,21 @@
                     <div class="stats shadow">
                         <div class="stat">
                           <div id="account-balance" class="stat-value">9400</div>
-                          <div class="stat-desc text-center mt-2">Available Balance</div>
+                          <div class="stat-desc text-center mt-2">Account Balance</div>
                         </div>
                       </div>
                 </div>
                 <div class="divider"></div>
-                <div>
+                <div class="flex justify-center">
                     <button id="add-money" class="btn btn-lg">Add Money</button>
                     <button id="cash-out" class="btn btn-lg">Cash Out</button>
+                    <button id="transaction" class="btn btn-lg">Transaction</button>
                 </div>
                 <div class="divider"></div>
 
                 <!-- Add Money section start  -->
 
-                <div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-money-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -53,7 +54,7 @@
                 <!-- Add Money section end  -->
 
                 <!-- Cash out section Start  -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cashout-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -74,6 +75,17 @@
                   </div>
                 <!-- Cash out section end  -->
 
+                <!-- Transaction section start  -->
+                 <div class="hidden" id="transaction-section">
+                  <h2 class="text-3xl text-center text-slate-900 font-semibold mb-3">Transaction History</h2>
+                  <div id="transaction-container" class="space-y-2">
+
+                  </div>
+
+                 </div>
+                <!-- Transaction section end  -->
+
+
               </div>
             </div>
           </div>
@@ -83,5 +95,6 @@
     <script src="./js/addmoney.js"></script>
     <script src="./js/cashout.js"></script>
     <script src="./js/utilities.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 </html>

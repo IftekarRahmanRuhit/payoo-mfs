@@ -12,6 +12,16 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
         const newBalance = balance + addMoney;
         document.getElementById('account-balance').innerText = newBalance;
 
+                // add to transaction history
+                const div = document.createElement('div');
+                div.classList.add('bg-yellow-200','px-4','rounded-xl','py-3');
+                div.innerHTML = `
+                <h4 class="text-2xl font-bold"> Add Money </h4>
+                <p class="font-medium">Money Added : $ ${addMoney}</p>
+                <p class="font-medium">Current Balance : $ ${newBalance}</p>`
+        
+                document.getElementById('transaction-container').appendChild(div);
+
     }
     else{
         alert('Failed To Add Money! Try Again');
