@@ -11,7 +11,7 @@ document.getElementById('btn-login').addEventListener('click',function(event){
     
     //  step-04 
     if(phoneNumber === '01712' && pinNumber === '1234'){
-        window.location.href='/home.html';
+        window.location.href='./home.html';
     }
     else{
         alert('wrong phone number of pin');
