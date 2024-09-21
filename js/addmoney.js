@@ -5,7 +5,12 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
     const addMoney = getInputFieldValueById('input-add-money');
     const pinNumber = getInputFieldValueById('input-pin');
-    console.log(addMoney ,pinNumber);
+
+    if(isNaN(addMoney)){
+        alert('Failed To Add Money! Try Again');
+        return;
+    }
+ 
 
     if(pinNumber === 1234){
         const balance = getTextFieldValueById('account-balance');

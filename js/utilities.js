@@ -16,3 +16,12 @@ function showSectionById(id){
     document.getElementById('transaction-section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+
+function showBgById(id){
+    document.getElementById('add-money').classList.remove('bg-indigo-700')
+    document.getElementById('cash-out').classList.remove('bg-indigo-700')
+    document.getElementById('transaction').classList.remove('bg-indigo-700')
+    document.getElementById(id).classList.add('bg-indigo-700');
+}
+
+
